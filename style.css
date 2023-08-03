@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FFFFFF;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Charqueada-Santa-Rita-Pelotas-hero-header.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #9fd6d2;
+    content: " ";
+    /*Conteúdo do item*/
+    width: 100px;
+    /*Comprimento do item*/
+    margin: 0 auto;
+    /*Centralizar*/
+    margin-top: 30px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #FFFFFF;
+}
+
+.btn-full {
+    background-color: #9fd6d2;
+    border: 1px solid #9fd6d2;
+    color: #FFFFFF;
+}
+
+.btn-ghost {
+    border: 1px solid #9fd6d2;
+    color: #9fd6d2
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #FFFFFF;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #9fd6d2;
+    border: 1px solid #9fd6d2;
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #9fd6d2;
+    color: #9fd6d2;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #7ba8a5;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #9fd6d2;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #9fd6d2;
+    color: #FFFFFF;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 8px 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #9fd6d2;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.images-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.images-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-photos {
+    padding: 0;
+}
+
+.section-steps {
+    background-color: #F4F4F4;
+}
+
+.step-box:first-child {
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.step-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.step div {
+    color: #9fd6d2;
+    border: 2px solid #9fd6d2;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 30px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.section-testimonials {
+    background-image: url(img/img-hero-header.jpg);
+    background-size: cover;
+    color: #FFFFFF;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+
+blockquote::before {
+    content: "\201";
+    font-size: 400%;
+    display: block;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+.column {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.steps-box-center {
+    display: flex;
+    justify-content: center;
+}
+
+.row-flex .column:nth-child(2) {
+    margin-top: 8px;
+}
+
+.line {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.span-1-of-4 {
+    width: 20%;
+    margin-right: 25px;
+}
+
+.name-icon {
+    display: flex;
+}
+
+.div-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-1-of-3 {
+    width: 33%;
+    margin-right: 3px;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    margin-top: 38px;
+
+    background-color: #FAFAFA;
+    border-radius: 8px 8px 0 0;
+    min-height: 300px;
+
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+fieldset legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4E4958;
+
+    margin-right: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #A9A7AF;
+}
+
+.input-wrapper label span:hover {
+    color: #6C6A71;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 56px;
+
+    padding: 0 24px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #6C6A71;
+}
+
+.input-wrapper textarea {
+    padding: 0;
+    height: 169px;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px
+}
+
+.col-3>div:nth-child(1) {
+    width: 100%;
+}
+
+input:invalid {
+    border: 1px solid #9fd6d2;
+}
+
+.btn-reserve {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    margin: 25px;
+
+    height: 56px;
+    background: #04D361;
+    border: 0;
+
+    color: #ffffff;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charqueada Santa Rita</title>
+
+    <link rel="icon" type="image/x-icon" href="img/hotel-solid.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <img src="img/hotel-solid.svg" alt="logo-empresa" class="logo">
+            <ul class="main-nav">
+                <li><a href="#atividade">Atividades</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </div>
+        <div class="hero-text-box">
+            <h1>Charqueada Santa Rita: <br> Conforto e aventura na natureza!</h1>
+            <a class="btn btn-full" href="#reserva">Reservar</a>
+            <a class="btn btn-ghost" href="#reserva">Mais informações</a>
+        </div>
+    </header>
+    <section class="section-features">
+        <div class="row" id="atividade">
+            <h2>Pousada de Charme &mdash; e Hotel de Golfe</h2>
+            <p class="long-copy">
+                "Bem-vindo à nossa pousada charme e hotel de campo! Desfrute de acomodações encantadoras em meio à
+                natureza. Delicie-se com refeições saborosas e explore paisagens deslumbrantes. Nossa equipe está pronta
+                para tornar sua estadia memorável. Seja bem-vindo ao nosso paraíso rural!"
+            </p>
+            <div class="row line">
+                <div class="col span-1-of-4 box">
+                    <div class="name-icon">
+                        <h3>Aberto 365 dias</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa
+                        non porttitor.
+                        Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <div class="name-icon">
+                        <h3>Café da Manhã</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa
+                        non porttitor.
+                        Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <div class="name-icon">
+                        <h3>Descansar a Mente</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa
+                        non porttitor.
+                        Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <div class="name-icon">
+                        <h3>Conexão Natureza</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa
+                        non porttitor.
+                        Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-photos clearfix" id="eventos">
+        <ul class="images-showcase">
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada-tropeira.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada-tropeira.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada-tropeira.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada-tropeira.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+        </ul>
+        <ul class="images-showcase">
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="img/feijoada.jpg" alt="texto do documento 01" title="texto do documento 01">
+                </figure>
+            </li>
+        </ul>
+
+    </section>
+    <section class="section-steps" id="reserva">
+
+        <div class="row row-flex">
+            <div class="column">
+                <form class="my-form">
+
+                    <div class="fieldset-wrapper">
+                        <legend>Faça a sua Reserva</legend>
+
+                        <div class="input-wrapper">
+                            <label for="event-name">Nome <span>(Nome completo)</span></label>
+                            <input type="text" id="event-name" required minlength="8">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-email">E-mail <span>(Digite seu e-mail completo)</span></label>
+                            <input type="email" id="event-email">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-peoples">Quantidade de Pessoas <span>(Somente números)</span></label>
+                            <input type="number" id="event-peoples">
+                        </div>
+                    </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="fieldset-wrapper">
+                            <legend>Dia e Hora: </legend>
+
+                            <div class="col-3">
+
+                                <div class="input-wrapper">
+                                    <label for="event-date">Data de Entrada</label>
+                                    <input type="date" id="event-date">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <label for="event-date">Data de Saída</label>
+                                    <input type="date" id="event-date">
+                                </div>
+
+                            </div>
+                    </fieldset>
+
+                </form>
+                <a class="btn btn-full btn-reserve" form="my-form" href="#">Reservar</a>
+            </div>
+        </div>
+    </section>
+    <section class="maps" id="localizacao">
+        <h2>Localização</h2>
+        <div class="div-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.926566624785!2d-52.29203512498051!3d-31.7452053122231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b46416412b8b%3A0xad71cb53c09ccf25!2sCharqueada%20Santa%20Rita%20Pousada%20de%20Charme!5e0!3m2!1spt-BR!2sbr!4v1685722577433!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="section-testiomonials">
+        <div class="row">
+            <h2>Melhorando a qualidade de vida das pessoas</h2>
+        </div>
+        <div class="row line">
+            <div class="col span-1-of-3">
+                A estadia na pousada foi fantástica! Quartos confortáveis, atendimento impecável e uma localização
+                deslumbrante.
+                <cite>
+                    <img src="img/menina.jpg" alt=""> Sophia Santos
+                </cite>
+            </div>
+            <div class="col span-1-of-3">
+                Amei tudo na pousada! Equipe super atenciosa, quartos aconchegantes e uma atmosfera relaxante.
+                Recomendo!
+                <cite>
+                    <img src="img/homem.jpg" alt=""> Lucas Costa
+                </cite>
+            </div>
+            <div class="col span-1-of-3">
+                "A pousada superou minhas expectativas! Ambiente charmoso, café da manhã delicioso e uma equipe
+                simpática e prestativa.
+                <cite>
+                    <img src="img/menina-2.jpg" alt=""> Isabella Fernandes
+                </cite>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary-color">
+        <div class="row footer-nav">
+            <ul>
+                <li><a href="https://www.charqueadasantarita.com.br/">Sobre Nós</a></li>
+                <li><a href="https://www.charqueadasantarita.com.br/eventos">Eventos</a></li>
+                <li><a href="https://www.instagram.com/charqueadasantarita/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/charqueadasantarita/">Instagram</a></li>
+                <li><a href="https://www.charqueadasantarita.com.br/">Site Oficial</a></li>
+            </ul>
+        </div>
+        <div class="row copy">
+            <p>Copyright &copy; 2023 - Charqueada Santa Rita. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
